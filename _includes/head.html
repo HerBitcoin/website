@@ -1,0 +1,44 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ '/style.css' | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ '/assets/font-awesome/css/all.min.css' | prepend: site.baseurl }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="manifest" href="{{ '/img/manifest.json' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ '/img/logos/herbitcoin_77.png' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
+    <meta name="msapplication-TileImage" content="{{ '/img/title-image.jpg' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="theme-color" content="{{ site.theme_color }}">
+    <meta property="og:locale" content="{{ site.og_locale }}" />
+    <meta property="og:url" content="{{ site.baseurl | prepend: site.url }}" />
+    <meta property="og:title" content="{{ site.og_title }}" />
+    <meta property="og:description" content="{{ site.og_description }}" />
+    <meta property="og:image" content="{{ '/img/title-image.jpg' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image:alt" content="{{ site.og_image_alt }}" />
+    <meta property="og:type" content="{{ site.og_type }}" />
+    <meta property="og:site_name" content="{{ site.og_site_name }}">
+    <meta name="twitter:site" content="{{ site.twitter_site }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ '/img/title-image.jpg' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="twitter:image:alt" content="{{ site.twitter_image_alt }}">
+    <meta name="twitter:title" content="{{ site.twitter_title }}">
+    <meta name="twitter:description" content="{{ site.twitter_description }}">
+</head>

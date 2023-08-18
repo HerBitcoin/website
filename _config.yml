@@ -1,0 +1,81 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: HerBitcoin
+email: hello@herbitcoin.org
+description: Her Bitcoin is a decentralized Bitcoin community for women.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://herbitcoin.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: "@herbitcoin"
+github_username: herbitcoin
+
+future: true
+timezone: Europe/Vienna
+
+meta_theme_color: "#F29112"
+twitter_site: "@herbitcoin"
+twitter_title: "HerBitcoin"
+twitter_description: "Her Bitcoin is a decentralized Bitcoin community for women"
+twitter_image_alt: "Her Bitcoin - Bitcoin. Freedom. Women."
+
+og_locale: "EN"
+og_url: ""
+og_title: "HerBitcoin"
+og_description: "Her Bitcoin is a decentralized Bitcoin community for women"
+og_image_alt: "Her Bitcoin - Bitcoin. Freedom. Women."
+og_type: "website"
+og_site_name: "Her Bitcoin global"
+
+social_twitter: "https://twitter.com/HerBitcoin"
+social_instagram: "https://instagram.com/herbitcoin_org"
+social_github: "https://github.com/HerBitcoin"
+social_linktree: "https://linktr.ee/herbitcoin"
+social_telegram: "https://t.me/+EFMmnwfRMKU0Mjg0"
+
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  events:
+    output: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

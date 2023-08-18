@@ -1,0 +1,15 @@
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: E1007D
+  secondary: F08E00
+  purple: 641D81
+  primary-dark: 222
+  secondary-dark: 333
+  muted: 777
+  light-grey: e1e1e2
+  mid-grey: 252525
+
+# Font Families
+font:
+  primary: 'Ubuntu, Roboto, sans-serif'
+  secondary: 'Ubuntu, Roboto, sans-serif'

@@ -1,0 +1,24 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<section class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <h2>Blog</h2>
+            {% for blog in site.data.blog %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture published_at %}{{blog.date_time | date: '%s'}}{% endcapture %}
+            {% if blog.published and published_at < nowunix %}
+            <div class="col-12 pt-4">
+                <div>{{ blog.category }} | {{ published_at | date: "%d.%m.%Y %H:%M" }} | {{ blog.author }}</div>
+                <h4>{{ blog.title }}</h4>
+                <div>{{ blog.content }}</div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

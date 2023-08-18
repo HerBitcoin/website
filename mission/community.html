@@ -1,0 +1,44 @@
+---
+layout: page
+title: Community
+permalink: /community/
+---
+
+<section class="bg-darkest-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8">
+                <h2>Events</h2>
+                <br>
+                {% for event in site.data.events %}
+                {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+                {% capture eventtime %}{{event.date_time_end | date: '%s'}}{% endcapture %}
+                    {% if eventtime > nowunix and event.kind == "Event" %}
+                        <div class="pt-4">
+                            <h3>{{ event.title }}</h3>
+                            <div>{{ event.location }}</div>
+                            <div>{{ event.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ event.date_time_end | date: "%H:%M" }}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row local-meetups mt-5">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 pt-5 pb-5">
+                <h2>Local Meetups</h2>
+                <br>
+                {% for meetup in site.data.meetups %}
+                {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+                {% capture eventtime %}{{meetup.date_time_end | date: '%s'}}{% endcapture %}
+                    {% if eventtime > nowunix and meetup.kind == "Meetup" %}
+                        <div class="pt-4">
+                            <h3>{{ meetup.title }}</h3>
+                            <div>{{ meetup.location }}</div>
+                            <div>{{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M" }}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

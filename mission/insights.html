@@ -1,0 +1,77 @@
+---
+layout: page
+title: Insights
+permalink: /insights/
+---
+
+<section class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-4">
+                <h2>Insights</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Articles</h3>
+            {% for article in site.data.articles %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture published_at %}{{article.date_time | date: '%s'}}{% endcapture %}
+            {% if article.published and published_at < nowunix %}
+            <div class="col-12 col-sm-6 col-lg-6 pt-4">
+                <div>{{ article.category }} | {{ published_at | date: "%d.%m.%Y %H:%M" }} | {{ article.author }}</div>
+                <h4>{{ article.title }}</h4>
+                <div>{{ article.content }}</div>
+                <a href="{{ article.link }}" target="_parent" rel="noreferrer noopener nofollow">Read more</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for item in site.data.women %}
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8">
+                    <div>{{ item.name }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <h3>Podcast</h3>
+            {% for podcast in site.data.podcasts %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture published_at %}{{podcast.date_time | date: '%s'}}{% endcapture %}
+            {% if podcast.published and published_at < nowunix %}
+            <div class="col-12 col-sm-4 col-lg-3 pt-4">
+                <div>{{ podcast.category }} | {{ published_at | date: "%d.%m.%Y %H:%M" }} | {{ podcast.author }}</div>
+                <h4>{{ podcast.title }}</h4>
+                <div>{{ podcast.content }}</div>
+                <a href="{{ podcast.link }}" target="_parent" rel="noreferrer noopener nofollow">Open Podcast</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <h3>Videos</h3>
+            {% for video in site.data.videos %}
+            {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+            {% capture published_at %}{{video.date_time | date: '%s'}}{% endcapture %}
+            {% if video.published and published_at < nowunix %}
+            <div class="col-12 col-sm-4 col-lg-4 pt-4">
+                <div>{{ video.category }} | {{ published_at | date: "%d.%m.%Y %H:%M" }} | {{ video.author }}</div>
+                <h4>{{ video.title }}</h4>
+                <div>{{ video.content }}</div>
+                <div class="mt-3 ratio ratio-16x9">
+                    <iframe src="{{ video.youtube }}" allowfullscreen></iframe>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

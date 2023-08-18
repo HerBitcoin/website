@@ -1,0 +1,306 @@
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: "Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    background: #{{ site.data.template.color.primary-dark }};
+    webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-toggler {
+    border: 1px solid #{{ site.data.template.color.primary }};
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+
+.navbar.bg-dark {
+    background-color: rgba(0,0,0, 1) !important;
+    transition: all 100ms ease-in-out;
+}
+.navbar.bg-dark.navbar-scrolled {
+    background-color: rgba(0,0,0, 1) !important;
+}
+
+@media(min-width:768px) {
+    .navbar.bg-dark {
+        background-color: rgba(0,0,0, 0) !important;
+        height: 100px;
+    }
+    .navbar.bg-dark.navbar-scrolled {
+        background-color: rgba(0,0,0, 1) !important;
+        height: 76px;
+    }
+}
+
+.text-muted {
+    color: #{{ site.data.template.color.mid-grey }};
+}
+
+.text-primary {
+    color: #{{ site.data.template.color.primary }};
+    transition: all 500ms ease-in-out;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    transition: all 250ms ease-in-out;
+}
+
+a {
+    color: #{{ site.data.template.color.primary }};
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    text-decoration: none;
+    color: #{{ site.data.template.color.secondary }};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-weight: 700;
+}
+
+.bg-light-gray {
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    min-height: calc(100vh - 150px);
+    text-align: center;
+    color: #fff;
+    background: #{{ site.data.template.color.primary-dark }};
+    background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/herbitcoin_1920.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.page {
+    min-height: 60vh;
+    color: #fff;
+    background: #{{ site.data.template.color.primary-dark  }};
+    background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/herbitcoin_header.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 150px);
+}
+
+header.page .intro-text {
+    min-height: 60vh;
+}
+
+@media(min-width:992px) {
+    header {
+        min-height: calc(100vh - 100px);
+    }
+    header .intro-text {
+        min-height: calc(100vh - 100px);
+    }
+}
+
+header .intro-text .intro-box {
+    display: block;
+    text-align: center;
+    transform: rotate(-2deg);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 60px 0;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6rem;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: {{ site.data.template.font.secondary }};
+        font-size: 1.8rem;
+        font-style: italic;
+        line-height: 2rem;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3.2rem;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 100px 0;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+section#contact {
+    padding: 30px 20px;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    color: #ffffff;
+    background: #{{ site.data.template.color.primary-dark }};
+}
+
+footer span.copyright {
+    font-family: {{ site.data.template.font.primary }};
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #{{ site.data.template.color.primary }};
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #{{ site.data.template.color.primary }};
+}
+
+::selection {
+    text-shadow: none;
+    background: #{{ site.data.template.color.primary }};
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+.notification-line {
+    min-height: 80px;
+    background: #{{ site.data.template.color.primary }};
+}
+
+@media(min-width: 992px) {
+    .notification-line {
+        min-height: 100px;
+    }
+}
+
+.local-meetups {
+    background: url('{{ site.baseurl }}/img/map-image.png') no-repeat scroll center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}

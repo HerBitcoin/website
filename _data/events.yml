@@ -1,0 +1,17 @@
+- kind: Event
+  date_time_start: 15.09.2023 09:00
+  date_time_end: 17.09.2023 24:00
+  title: HerBitcoin Meetup BTC23
+  location: Congress Innsbruck
+  group: HerBitcoin_Innsbruck
+  pre_info:
+  post_info:
+
+- kind: Event
+  date_time_start: 05.10.2023 18:30
+  date_time_end: 07.10.2023 21:21
+  title: HerBitcoin Meetup Berlin Bitcoin Space
+  location: Station Berlin
+  group: HerBitcoin_Berlin
+  pre_info:
+  post_info:

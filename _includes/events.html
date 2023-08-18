@@ -1,0 +1,51 @@
+<section id="events" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-offset-2 col-lg-8 text-center">
+                <h2 class="section-heading text-muted">Meetups</h2>
+                <h3 class="section-subheading text-muted">Existing HerBitcoin Meetups:</h3>
+            </div>
+            <div class="col-xl-12 col-sm-5 col-md-6 col-lg-offset-1 col-lg-5">
+                <h2 class="text-muted text-center text-md-left">City Meetups</h2>
+                {% for event in site.data.events %}
+                {% capture nowunix %}{{'now' | date: '%s' | times: 1}}{% endcapture %}
+                {% capture eventtime %}{{event.date_time_end | date: '%s' | times: 1}}{% endcapture %}
+                {% if eventtime > nowunix and event.kind == "SafeTheDate" %}
+                <h3 class="text-muted text-center text-md-left">
+                    <span style="padding-right: 16px;">{{ event.title }}</span> {{ event.date_time_start | date: "%d" }} - {{ event.date_time_end | date: "%d.%m.%Y" }}
+                    <br><br>
+                    {{ event.pre_info }}
+                    <br><br>
+                    {{ event.location }}
+                </h3>
+                {% endif %}
+                {% endfor %}
+                <br>
+                <!--h4 class="text-muted text-center text-md-left">-</h4-->
+                <h4 class="text-muted text-center text-md-left"><a href="{{site.social_telegram}}" target="_blank">HerBitcoin FRANKFURT</a></h4>
+                <h4 class="text-muted text-center text-md-left"><a href="{{site.social_telegram}}" target="_blank">HerBitcoin INNSBRUCK</a></h4>
+            </div>
+            <div class="col-xl-12 col-sm-7 col-md-6 col-lg-5">
+                <h3 class="text-muted text-center text-md-left">Conference Meetups</h3>
+                {% for event in site.data.events %}
+                {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+                {% capture eventtime %}{{event.date_time_end | date: '%s'}}{% endcapture %}
+                {% if eventtime > nowunix and event.kind == "Stammtisch" %}
+                <div class="text-muted text-center text-md-left">
+                    {{ event.title }} {{ event.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ event.date_time_end | date: "%H:%M" }}
+                </div>
+                {% elsif eventtime > nowunix and event.kind == "Sommerpause" %}
+                <div class="text-muted text-center text-md-left">
+                    {% assign months = "Jänner|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember" | split: "|" %}
+                    {% assign start = event.date_time_start | date: "%-m" | minus: 1 %}
+                    {% assign end = event.date_time_end | date: "%-m" | minus: 1 %}
+                    {{ months[start] }} / {{ months[end] }} - {{ event.title }}
+                </div>
+                {% endif %}
+                {% endfor %}
+                <br>
+                <h4 class="text-muted text-center text-md-left">HerBitcoin BTC23</h4>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+- kind: Meetup
+  date_time_start: Start?
+  date_time_end: End?
+  title: HerBitcoin Meetup Innsbruck
+  location: Where?
+  group: HerBitcoin_Innsbruck
+  pre_info:
+  post_info:
+
+- kind: Meetup
+  date_time_start: tba
+  date_time_end: tba
+  title: HerBitcoin Meetup Frankfurt
+  location: tba
+  group: HerBitcoin_Frankfurt
+  pre_info:
+  post_info:
+
+- kind: Meetup
+  date_time_start: tba
+  date_time_end: tba
+  title: HerBitcoin Meetup Berlin
+  location: tba
+  group: HerBitcoin_Berlin
+  pre_info:
+  post_info:

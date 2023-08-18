@@ -1,0 +1,17 @@
+{
+  "name": "HERBITCOIN",
+  "short_name": "HERBITCOIN",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color" : "#E1007D" ,
+  "description": "decentralized Bitcoin community for women",
+  "icons": [
+    {
+      "src": "/img/herbitcoin_77.png",
+      "sizes": "77x77",
+      "type": "image/png",
+      "density": "1.0"
+    }
+  ]
+}
