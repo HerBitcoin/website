@@ -36,6 +36,10 @@ permalink: /community/
                 {% if eventtime > nowunix and meetup.kind == "Meetup" %}
                 <div class="pt-4">
                     <h3>{{ meetup.title }}</h3>
+                    <div>
+                        <span class="fw-bold pe-2">Telegram: </span><a href="{{ meetup.group_url }}" target="_blank" title="{{ meetup.group }}">{{
+                            meetup.group }}</a>
+                    </div>
                     <div>{{ meetup.location }}</div>
                     <div>{{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M"
                         }}</div>

@@ -65,3 +65,16 @@ ruby -v | check if version is correct = 3.1.3
 
 then start again with: bundle exec jekyll serve
 ```
+
+## Git 
+#### Push changes
+```
+git status | check changed files
+git add . | add all changes
+git commit -m "my commit message" | set a commit message
+git push origin main | push changes to main repo
+```
+#### Pull changes
+```
+git pull origin main
+```
