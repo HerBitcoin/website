@@ -1,8 +1,8 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: E1007D
+  primary: 252525
   secondary: F08E00
-  purple: 641D81
+  pink: e1007d
   primary-dark: 222
   secondary-dark: 333
   muted: 777
