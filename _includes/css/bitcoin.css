@@ -229,12 +229,13 @@ footer {
 }
 
 footer span.copyright {
-    font-family: {{ site.data.template.font.primary }};
+    font-family: {{ site.data.template.font.secondary }};
     line-height: 40px;
 }
 
 ul.social-buttons {
     margin-bottom: 0;
+    font-family: {{ site.data.template.font.secondary }};
 }
 
 ul.social-buttons li a {
@@ -285,7 +286,7 @@ img::-moz-selection {
 
 .notification-line {
     min-height: 80px;
-    background: #{{ site.data.template.color.primary }};
+    background: #{{ site.data.template.color.mid-grey }};
 }
 
 @media(min-width: 992px) {

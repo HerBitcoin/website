@@ -1,6 +1,6 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 252525
+  primary: e1e1e2
   secondary: F08E00
   pink: e1007d
   primary-dark: 222
