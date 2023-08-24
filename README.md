@@ -58,7 +58,7 @@ ruby -v | check if version is correct = 3.1.3
 ```
 #### Short Re-Setup way
 ```
-rbenv init
+bundle exec jekyll serve
 copy paste output into terminal e.g. eval "$(rbenv init - bash)"
 rbenv global 3.1.3
 ruby -v | check if version is correct = 3.1.3

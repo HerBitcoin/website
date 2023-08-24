@@ -1,15 +1,15 @@
 - kind: Meetup
-  date_time_start: Start?
-  date_time_end: End?
+  date_time_start: 15.09.2023 18:30
+  date_time_end: 15.09.2023 19:30
   title: HerBitcoin Meetup Innsbruck
-  location: Where?
+  location: Congress Innsbruck
   group: HerBitcoin_Innsbruck
   pre_info:
   post_info:
 
 - kind: Meetup
-  date_time_start: tba
-  date_time_end: tba
+  date_time_start: 21.11.2023 17:30
+  date_time_end: 21.11.2023 19:30
   title: HerBitcoin Meetup Frankfurt
   location: tba
   group: HerBitcoin_Frankfurt
