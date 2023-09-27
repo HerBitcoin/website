@@ -4,13 +4,36 @@ title: Insights
 permalink: /insights/
 ---
 
-<section class="bg-light-gray">
+<section class="bg-darkest-gray">
     <div class="container">
         <div class="row">
-            <div class="col-12 pb-4">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 pb-4">
                 <h2>Insights</h2>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8">
+                <h2 class="pt-5 pb-3">Women in Bitcoin Initiatives</h2>
+                {% for initiative in site.data.initiatives %}
+                <div class="pt-4">
+                    <h3>{{ initiative.name }}</h3>
+                    <div><span class="fw-bold pe-2">Organizers: </span> {{ initiative.organizers }}</div>
+                    <div><span class="fw-bold pe-2">Country: </span>{{ initiative.country }}</div>
+                    <div><span class="fw-bold pe-2">Focus: </span>{{ initiative.focus }}</div>
+                    <div><span class="fw-bold pe-2">Social Media: </span><a href="{{ initiative.socials_url }}" target="_blank" title="{{ initiative.socials_title }}">{{
+                        initiative.socials_title }}</a>
+                    <div><span class="fw-bold pe-2">Website: </span><a href="{{ initiative.website_url }}" target="_blank" title="{{ initiative.website_title }}">{{
+                            initiative.website_title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light-gray">
+    <div class="container">
         <div class="row">
             <h3>Articles</h3>
             {% for article in site.data.articles %}

@@ -19,8 +19,8 @@ permalink: /community/
                         <a href="{{ event.link_url }}" target="_blank" title="{{ event.link_title }}">{{
                             event.link_title }}</a>
                     </div>
-                    <div>{{ event.location }}</div>
-                    <div>{{ event.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ event.date_time_end | date: "%H:%M"
+                    <div>Location: {{ event.location }}</div>
+                    <div>Date: {{ event.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ event.date_time_end | date: "%H:%M"
                         }}</div>
                 </div>
                 {% endif %}
@@ -39,32 +39,14 @@ permalink: /community/
                     <div>
                         <span class="fw-bold pe-2">Telegram: </span><a href="{{ meetup.group_url }}" target="_blank" title="{{ meetup.group }}">{{
                             meetup.group }}</a>
-                    </div>
-                    <div>{{ meetup.location }}</div>
-                    <div>{{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M"
+                        </div>
+                    <div class="fw-bold pe-2">Next Meetup:</div>
+                    <div>Location: {{ meetup.location }}</div>
+                    <div>Date: {{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M"
                         }}</div>
                 </div>
                 {% endif %}
                 {% endfor %}
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8">
-                    <h2 class="pt-5 pb-3">Women in Bitcoin Initiatives</h2>
-                    {% for initiative in site.data.initiatives %}
-                    <div class="pt-4">
-                        <h3>{{ initiative.name }}</h3>
-                        <div><span class="fw-bold pe-2">Organizers: </span> {{ initiative.organizers }}</div>
-                        <div><span class="fw-bold pe-2">Country: </span>{{ initiative.country }}</div>
-                        <div><span class="fw-bold pe-2">Focus: </span>{{ initiative.focus }}</div>
-                        <div><span class="fw-bold pe-2">Social Media: </span><a href="{{ initiative.socials_url }}" target="_blank" title="{{ initiative.socials_title }}">{{
-                            initiative.socials_title }}</a>
-                        <div><span class="fw-bold pe-2">Website: </span><a href="{{ initiative.website_url }}" target="_blank" title="{{ initiative.website_title }}">{{
-                                initiative.website_title }}</a>
-                    </div>
-                    {% endfor %}
-                </div>
             </div>
         </div>
 </section>
