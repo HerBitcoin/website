@@ -16,6 +16,7 @@ permalink: /blog/
                 <div>{{ blog.category }} | {{ published_at | date: "%d.%m.%Y" }} | {{ blog.author }}</div>
                 <h4>{{ blog.title }}</h4>
                 <div>{{ blog.content }}</div>
+                <div>{{ blog.link }}</div>
             </div>
             {% endif %}
             {% endfor %}
