@@ -13,7 +13,7 @@ permalink: /blog/
             {% capture published_at %}{{blog.date_time | date: '%s'}}{% endcapture %}
             {% if blog.published and published_at < nowunix %}
             <div class="col-12 pt-4">
-                <div>{{ blog.category }} | {{ published_at | date: "%d.%m.%Y %H:%M" }} | {{ blog.author }}</div>
+                <div>{{ blog.category }} | {{ published_at | date: "%d.%m.%Y" }} | {{ blog.author }}</div>
                 <h4>{{ blog.title }}</h4>
                 <div>{{ blog.content }}</div>
             </div>
