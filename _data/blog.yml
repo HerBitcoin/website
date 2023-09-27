@@ -1,9 +1,25 @@
-- category: Blog 002
+- category: Blog 003
   published: true
   date_time: 27.09.2023 
   author: Janine Griesser
+  title: Talking about HerBitcoin on the German Podcast EINUNDZWANZIG
+  content: This podcast episode is about BTC23, HerBitcoin and a lot of other content made with love. <br> "Verliebt in Bitcoin" - who is not in love with Bitcoin?
+  link: https://einundzwanzig.space/podcast/news-201-verliebt-in-bitcoin/
+
+- category: Blog 003
+  published: true
+  date_time: 25.09.2023 
+  author: Janine Griesser
+  title: First Mentioning on the German Podcast "Was Bitcoin bringt." from Niko Jilch
+  content: After BTC23 - the biggest german speaking event - Niko Jilch talked about HerBitcoin on his BTC23 review. 
+  link: https://www.youtube.com/watch?v=h5M7O09NhhA&t=20s
+
+- category: Blog 002
+  published: true
+  date_time: 24.09.2023 
+  author: Janine Griesser
   title: First HerBitcoin Meetup in Innsbruck BTC23
-  content: Our first meetup in Innsbruck on 15th September 2023 was a great success. <br> 24 women came together talking about Bitcoin and how they feel as a women in this space. 
+  content: Our first meetup in Innsbruck on 15th September 2023 was a great success. <br> 24 women came together talking about Bitcoin and how they feel as a women in this space. <br> More coming soon ...
   link: https://bconf.de/
   
 - category: Blog 001
