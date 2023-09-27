@@ -4,7 +4,8 @@
   author: Janine Griesser
   title: Talking about HerBitcoin on the German Podcast EINUNDZWANZIG
   content: This podcast episode is about BTC23, HerBitcoin and a lot of other content made with love. <br> "Verliebt in Bitcoin" - who is not in love with Bitcoin?
-  link: https://einundzwanzig.space/podcast/news-201-verliebt-in-bitcoin/
+  link_title: EINUNDZWANZIG - Verliebt in Bitcoin
+  link_url: https://einundzwanzig.space/podcast/news-201-verliebt-in-bitcoin/
 
 - category: Blog 003
   published: true
