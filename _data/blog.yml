@@ -13,7 +13,8 @@
   author: Janine Griesser
   title: First Mentioning on the German Podcast "Was Bitcoin bringt." from Niko Jilch
   content: After BTC23 - the biggest german speaking event - Niko Jilch talked about HerBitcoin on his BTC23 review. 
-  link: https://www.youtube.com/watch?v=h5M7O09NhhA&t=20s
+  link_title: Was Bitcoin bringt. - Niko Jilch
+  link_url: https://www.youtube.com/watch?v=h5M7O09NhhA&t=20s
 
 - category: Blog 002
   published: true
@@ -21,7 +22,8 @@
   author: Janine Griesser
   title: First HerBitcoin Meetup in Innsbruck BTC23
   content: Our first meetup in Innsbruck on 15th September 2023 was a great success. <br> 24 women came together talking about Bitcoin and how they feel as a women in this space. <br> More coming soon ...
-  link: https://bconf.de/
+  link_title: BTC23 - Innsbruck, Austria
+  link_url: https://bconf.de/
   
 - category: Blog 001
   published: true
@@ -29,6 +31,7 @@
   author: Janine Griesser
   title: Write your own content on HerBitcoin.org
   content: If you would like to write a blog post about Bitcoin e.g. <br><br> - How to set up a node? <br> - How to secure your Bitcoin? <br> - What was your way to Bitcoin? <br><br> or something else you would like to share with the Her Bitcoin community just write us at hello@herbitcoin.org. 
-  link:
+  link_title:
+  link_url:
 
 
