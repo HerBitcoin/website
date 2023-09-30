@@ -30,15 +30,16 @@ body {
     background-color: rgba(0,0,0, 1) !important;
 }
 
-@media(min-width:768px) {
-    .navbar.bg-dark {
-        background-color: rgba(0,0,0, 0) !important;
-        height: 100px;
+@media (max-width: 991px) {
+    #navbarTogglerTargetHerBitcoin .navbar-nav {
+        justify-content: center;
+        width: 100%;
     }
-    .navbar.bg-dark.navbar-scrolled {
-        background-color: rgba(0,0,0, 1) !important;
-        height: 76px;
-    }
+        
+    #navbarTogglerTargetHerBitcoin .nav-item {
+        text-align: center;
+        flex-basis: 100%;
+        }
 }
 
 .text-muted {
