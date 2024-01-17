@@ -9,10 +9,10 @@
   post_info:
 
 - kind: Meetup
-  date_time_start: tba
-  date_time_end: tba
+  date_time_start:
+  date_time_end:
   title: HerBitcoin Meetup INNSBRUCK, Austria
-  location: tba
+  location:
   group: HerBitcoin_INNSBRUCK
   group_url: https://t.me/herbitcoin_INNSBRUCK
   pre_info:
