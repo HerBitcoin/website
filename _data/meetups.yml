@@ -37,3 +37,33 @@
   group_url: 
   pre_info:
   post_info:
+
+- kind: Meetup
+  date_time_start: tba
+  date_time_end: tba
+  title: HerBitcoin Meetup MUNICH, Germany
+  location: tba
+  group: HerBitcoin_MUNICH
+  group_url: 
+  pre_info:
+  post_info:
+
+  - kind: Meetup
+  date_time_start: tba
+  date_time_end: tba
+  title: HerBitcoin Meetup ROSTOCK, Germany
+  location: tba
+  group: HerBitcoin_ROSTOCK
+  group_url: 
+  pre_info:
+  post_info:
+
+  - kind: Meetup
+  date_time_start: tba
+  date_time_end: tba
+  title: HerBitcoin Meetup LA PALMA, Spain
+  location: tba
+  group: HerBitcoin_LAPALMA
+  group_url: 
+  pre_info:
+  post_info:
