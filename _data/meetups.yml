@@ -38,7 +38,7 @@
   pre_info:
   post_info:
 
-  - kind: Meetup
+ - kind: Meetup
   date_time_start: tba
   date_time_end: tba
   title: HerBitcoin Meetup ROSTOCK, Germany
@@ -48,7 +48,7 @@
   pre_info:
   post_info:
 
-  - kind: Meetup
+- kind: Meetup
   date_time_start: tba
   date_time_end: tba
   title: HerBitcoin Meetup LA PALMA, Spain
