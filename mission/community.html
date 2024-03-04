@@ -34,21 +34,33 @@ permalink: /community/
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture eventtime %}{{meetup.date_time_end | date: '%s'}}{% endcapture %}
                 {% if eventtime > nowunix and meetup.kind == "Meetup" %}
-                <div class="pt-4">
-                    <h3>{{ meetup.title }}</h3>
-                    <div>
-                        <span class="fw-bold pe-2">Telegram: </span><a href="{{ meetup.group_url }}" target="_blank" title="{{ meetup.group }}">{{
-                            meetup.group }}</a>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/meetups/{{ meetup.meetup_img }}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ meetup.title }}
+                                    <span class="text-center">
+                                        <a href="{{ meetup.group_url }}" target="_blank">
+                                            <i class="fa-brands fa-telegram fa-2xl"></i>
+                                        </a>
+                                    </span>
+                                </h5>
+                                <!--<p class="card-text">
+                                <div class="fw-bold pe-2">Next Meetup:</div>
+                                <div>Location: {{ meetup.location }}</div>
+                                <div>Date: {{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M"
+                                    }}</div>
+                                </p>-->
+                            </div>
+                        </div>
                     </div>
-                    <!--
-                    <div class="fw-bold pe-2">Next Meetup:</div>
-                    <div>Location: {{ meetup.location }}</div>
-                    <div>Date: {{ meetup.date_time_start | date: "%d.%m.%Y %H:%M" }} - {{ meetup.date_time_end | date: "%H:%M"
-                        }}</div>
-                    -->
                 </div>
                 {% endif %}
                 {% endfor %}
             </div>
         </div>
+    </div>
 </section>

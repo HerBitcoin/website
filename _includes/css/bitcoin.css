@@ -6,7 +6,7 @@ body {
     background: #{{ site.data.template.color.primary-dark }};
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
- 
+
 .navbar-brand img {
     height: 50px;
 }
@@ -35,7 +35,7 @@ body {
         justify-content: center;
         width: 100%;
     }
-        
+
     #navbarTogglerTargetHerBitcoin .nav-item {
         text-align: center;
         flex-basis: 100%;
@@ -302,4 +302,8 @@ img::-moz-selection {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+#blog a {
+    color: #{{ site.data.template.color.secondary }};
 }

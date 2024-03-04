@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<section class="bg-light-gray">
+<section id="blog" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <h2>Blog</h2>
@@ -13,6 +13,31 @@ permalink: /blog/
             {% capture published_at %}{{blog.date_time | date: '%s'}}{% endcapture %}
             {% if blog.published and published_at < nowunix %}
             <div class="col-12 pt-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="{{ blog.image_url }}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ blog.title }}</h5>
+                                <p class="card-text">{{ blog.content }}</p>
+                                <p class="card-text">
+                                    <a href="{{ blog.link_url }}" target="_blank" title="{{ blog.link_title }}">
+                                        <strong>{{ blog.link_title }}</strong>
+                                    </a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div></div>
+                                    <div><small class="text-muted">{{ blog.category }} | {{ published_at | date: "%d.%m.%Y" }} | {{ blog.author }}</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="col-12 pt-4">
                 <div>{{ blog.category }} | {{ published_at | date: "%d.%m.%Y" }} | {{ blog.author }}</div>
                 <h4>{{ blog.title }}</h4>
                 <div>{{ blog.content }}</div>
@@ -20,7 +45,7 @@ permalink: /blog/
                     <a href="{{ blog.link_url }}" target="_blank" title="{{ blog.link_title }}">{{
                             blog.link_title }}</a>
                 </div>
-            </div>
+            </div>-->
             {% endif %}
             {% endfor %}
         </div>

@@ -5,6 +5,7 @@
   location: tba
   group: HerBitcoin_INNSBRUCK
   group_url: https://t.me/herbitcoin_INNSBRUCK
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
 
@@ -15,6 +16,7 @@
   location: Holzmarktperle
   group: HerBitcoin_BERLIN
   group_url: https://t.me/herbitcoin_BERLIN
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
 
@@ -25,6 +27,7 @@
   location: tba
   group: HerBitcoin_FRANKFURT
   group_url: https://t.me/HerBitcoin_FFM
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
 
@@ -35,6 +38,7 @@
   location: tba
   group: HerBitcoin_MUNICH
   group_url: https://web.telegram.org/k/#-4094122428
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
 
@@ -45,6 +49,7 @@
   location: tba
   group: HerBitcoin_ROSTOCK
   group_url: https://t.me/HerBitcoin_ROSTOCK
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
 
@@ -55,5 +60,6 @@
   location: tba
   group: HerBitcoin_LAPALMA
   group_url: https://t.me/HerBitcoin_LaPalma
+  meetup_img: meetup-placeholder.png
   pre_info:
   post_info:
