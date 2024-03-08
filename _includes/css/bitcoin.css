@@ -21,10 +21,14 @@ body {
     box-shadow: none !important;
 }
 
-
 .navbar.bg-dark {
-    background-color: rgba(0,0,0, 0) !important;
-    transition: all 100ms ease-in-out;
+    background-color: rgba(0,0,0, 1) !important;
+}
+@media (min-width: 991px) {
+    .navbar.bg-dark {
+        background-color: rgba(0,0,0, 0) !important;
+        transition: all 100ms ease-in-out;
+    }
 }
 .navbar.bg-dark.navbar-scrolled {
     background-color: rgba(0,0,0, 1) !important;
@@ -108,7 +112,7 @@ header {
 }
 
 header.page {
-    min-height: 60vh;
+    min-height: 76px;
     color: #fff;
     background: #{{ site.data.template.color.primary-dark  }};
     background-attachment: scroll;
@@ -219,7 +223,28 @@ section h3.section-subheading {
 }
 
 section#contact {
-    padding: 30px 20px;
+    padding: 10px 20px;
+}
+
+a.inverse-link,
+a.inverse-link:hover,
+a.inverse-link:focus,
+a.inverse-link:active,
+a.inverse-link.active {
+    outline: 0;
+    transition: all 250ms ease-in-out;
+}
+
+a.inverse-link  {
+    color: #{{ site.data.template.color.secondary }};
+}
+
+a.inverse-link:hover,
+a.inverse-link:focus,
+a.inverse-link:active,
+a.inverse-link.active {
+    text-decoration: none;
+    color: #{{ site.data.template.color.primary }};
 }
 
 footer {

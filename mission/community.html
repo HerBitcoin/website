@@ -8,7 +8,7 @@ permalink: /community/
     <div class="container">
         <div class="row">
             <div class="col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8">
-                <h2 class="pt-5 pb-3">Events</h2>
+                <!-- <h2 class="pt-5 pb-3">Events</h2> -->
                 {% for event in site.data.events %}
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture eventtime %}{{event.date_time_end | date: '%s'}}{% endcapture %}
@@ -37,17 +37,22 @@ permalink: /community/
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-3">
-                            <img src="../img/meetups/{{ meetup.meetup_img }}" class="img-fluid rounded-start" alt="...">
+                            <img src="../img/meetups/{{ meetup.meetup_img }}" class="p-4 img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-9">
                             <div class="card-body">
                                 <h5 class="card-title">{{ meetup.title }}
-                                    <span class="text-center">
+                                    <span class="d-none d-sm-inline text-center">
                                         <a href="{{ meetup.group_url }}" target="_blank">
-                                            <i class="fa-brands fa-telegram fa-2xl"></i>
+                                            <i class="fa-brands fa-telegram fa-xl"></i>
                                         </a>
                                     </span>
                                 </h5>
+                                <div class="d-sm-none text-center">
+                                        <a href="{{ meetup.group_url }}" target="_blank">
+                                            <i class="fa-brands fa-telegram fa-2xl"></i>
+                                        </a>
+                                </div>
                                 <!--<p class="card-text">
                                 <div class="fw-bold pe-2">Next Meetup:</div>
                                 <div>Location: {{ meetup.location }}</div>
