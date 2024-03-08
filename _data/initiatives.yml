@@ -1,26 +1,35 @@
+- name: Access Tribe
+  organizers: Krista Edmunds
+  country: World
+  focus: Inspire, Educate, Connect Women in Bitcoin
+  socials_title: X @AccessTribe
+  socials_url: https://twitter.com/AccessTribe 
+  website_title: accesstribe.com
+  website_url: https://www.accesstribe.com/
+
+- name: Bitcoin Dada
+  organizers:  Marcel Lorraine
+  country: Africa
+  focus: Creating a safe community space for African women to learn about Bitcoin
+  socials_title: X @btc_dada
+  socials_url: https://twitter.com/btc_dada 
+  website_title: geyser.fund @bitcoindadabreakingnewgrounds
+  website_url: https://geyser.fund/project/bitcoindadabreakingnewgrounds/
+
+- name: EineMillionSatoshi
+  organizers: Eva Brauckmann
+  country: Germany
+  focus: Bitcoin education
+  socials_title: X @einemillionsats
+  socials_url: https://twitter.com/einemillionsats 
+  website_title: einemillionsatoshi.de
+  website_url: https://www.einemillionsatoshi.de/
+
 - name: Les Femmes Orange
-  organizers: Daniela, Deborah Reher, Elina Betz, Lina Seiche, Nicole Nowak and Rachel Geyer
+  organizers: Rachel Geyer, Elina Betz and Nicole Nowak
   country: Germany
   focus: Bitcoin education made by women
   socials_title: X @lesfemmesorange
   socials_url: https://twitter.com/lesfemmesorange
   website_title: lesfemmesorange.work
   website_url: https://www.lesfemmesorange.work/
-
-- name: Bitcoin Ladies
-  organizers:  
-  country: 
-  focus: 
-  socials_title: X @BitcoinLadies
-  socials_url: https://twitter.com/BitcoinLadies
-  website_title: bitcoinladies.org
-  website_url: https://www.bitcoinladies.org/
-
-- name: African Bitcoiners
-  organizers: Farida Nabourema
-  country: 
-  focus: 
-  socials_title: 
-  socials_url: 
-  website_title: 
-  website_url: 

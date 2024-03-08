@@ -6,7 +6,8 @@
   content: This podcast episode is about BTC23, HerBitcoin and a lot of other content made with love. <br> "Verliebt in Bitcoin" - who is not in love with Bitcoin?
   link_title: EINUNDZWANZIG - Verliebt in Bitcoin
   link_url: https://einundzwanzig.space/podcast/news-201-verliebt-in-bitcoin/
-  image_url: ../img/blog/blog-placeholder.png
+  image_url: ../img/blog/einundzwanzig-square.png
+
 
 - category: Blog 003
   published: true
@@ -16,7 +17,7 @@
   content: After BTC23 - the biggest german speaking event - Niko Jilch talked about HerBitcoin on his BTC23 review.
   link_title: Was Bitcoin bringt. - Niko Jilch
   link_url: https://www.youtube.com/watch?v=h5M7O09NhhA&t=20s
-  image_url: ../img/blog/blog-placeholder.png
+  image_url: ../img/blog/WBB.png
 
 - category: Blog 002
   published: true
@@ -26,7 +27,7 @@
   content: Our first meetup in Innsbruck on 15th September 2023 was a great success. <br> 24 women came together talking about Bitcoin and how they feel as a women in this space. <br> More coming soon ...
   link_title: BTC23 - Innsbruck, Austria
   link_url: https://bconf.de/
-  image_url: ../img/blog/blog-placeholder.png
+  image_url: ../img/blog/Innsbruck2023.png
 
 - category: Blog 001
   published: true
